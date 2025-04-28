@@ -207,15 +207,26 @@ git switch
 git branch -v
 ```
 
-
-### 4.7.2 브랜치 이동하기
+### 4.7.3 브랜치 이동하기
 ```bash
 gjit switch test
 ```
 
-### 4.7.3 브랜치 삭제하기
+### 4.7.4 브랜치 삭제하기
 
-### 4.7.4 브랜치 합치기
+```bash
+git branch -D test
+git branch -v
+```
+
+### 4.7.5 브랜치 합치기
+
+- 브랜치를 하나로 합쳐주기
+- 주의 사항 : `main 브랜치에서 test 브랜치 합쳐줄 겁니다.`
+
+```bash
+git merge 합쳐주고자하는 브랜치명
+```
 
 
 # Github
