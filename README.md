@@ -245,7 +245,7 @@ git merge 합쳐주고자하는 브랜치명
 
 ## 2. GitHub 프로젝트(Repository) 생성하기
 
-- 만약 tll_git 프로젝트 생성한다면 GitHub 에도 동일하게 생성하자.
+- 만약 til_git 프로젝트 생성해다면 GitHub 에도 동일하게 생성하자.
 - public 으로 셋팅 : 외부로 소스 공개
 - description 은 작성해 주자 : 프로젝트 설명
 
@@ -253,14 +253,14 @@ git merge 합쳐주고자하는 브랜치명
 
 ### 3.1. 무조건 GitHub 에 로그인 된 상태로 시도하셔야 합니다.
 
-### 3.2. `윈도우 > 자격 증명 관리자 > Windows 자격 증명` 에서 GitHub 확인
+### 3.2. `윈도우 > 자격 증명 관리자 > Windows 자격 증명 ` 에서 gitHub 확인
 
 - 새로 생성하시길 권장합니다.
 - PC 정리 또는 자리 이동시 반드시 삭제하셔야 합니다.
 
 ## 4. GitHub 프로젝트 연결하기
 
-### 4.1. 원격 저장소 주소 저장하기
+### 4.1. 원격 저장소 주소 지정하기
 
 - `remote` : 원격(인터넷) 을 말합니다.
 - `add` : 추가하라
@@ -281,9 +281,44 @@ git remote -v
 
 ### 4.3. 원격 저장소에 소스 등록하기
 
-- 습관적으로 하셨으면 좋은 작업(Ctrl +S, 즉, 저장 후)
+- 습관적으로 하셨으면 좋은 작업 (Ctrl + S, 즉, 저장 후)
 
 ```bash
 git add .
 git commit -m "[docs]:최초등록"
+```
+
+- 소스 업로드를 `push 한다`라고 합니다.
+
+```bash
+git push -u origin main
+```
+
+- `-u` 옵션을 붙이셨다면 이후로는 `git push` 하면 됨.
+
+### 4.4. 원격 저장소 관리하기
+
+- 목록보기
+
+```bash
+git remote -v
+```
+
+- 삭제하기
+
+```bash
+git remote remove 원격이름
+```
+
+- 추가하기
+
+```bash
+git remote add 원격이름 https 주소
+
+```
+
+- 이름바꾸기
+
+```bash
+git remote rename 옛이름 새이름
 ```
