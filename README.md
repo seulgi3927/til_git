@@ -376,9 +376,6 @@ git commit -m "작업내용"
 git push origin 브랜치명
 ```
 
-<<<<<<< HEAD
-서울에서 작업완료 함.
-=======
 ### 5.4. git push 이후 작업
 
 - jeju 폴더는 clone 을 하여 진행함.
@@ -408,4 +405,3 @@ git switch --trach -c 생성브랜치명 원격브랜치명
 ```
 
 - 예)`git switch --track -c jeju remeotes/origin/jeju`
->>>>>>> jeju
